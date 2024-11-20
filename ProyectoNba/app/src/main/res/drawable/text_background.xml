@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Sombra sutil -->
+    <item>
+        <shape>
+            <corners android:radius="12dp" />
+            <solid android:color="#00000000" />
+            <shadowColor android:color="#50000000" />
+            <padding android:bottom="2dp"/>
+        </shape>
+    </item>
+
+    <!-- Fondo degradado -->
+    <item android:left="0dp" android:right="0dp" android:top="1dp" android:bottom="2dp">
+        <shape>
+            <gradient
+                android:angle="0"
+                android:startColor="#ebf5fb"
+                android:centerColor="#45b39d"
+                android:endColor="#0b5345" />
+            <corners android:radius="14dp"/>
+        </shape>
+    </item>
+</layer-list>

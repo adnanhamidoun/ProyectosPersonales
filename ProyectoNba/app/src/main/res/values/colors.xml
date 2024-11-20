@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Neutros -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="gray_50">#FAFAFA</color>
+    <color name="gray_100">#F5F5F5</color>
+    <color name="gray_200">#EEEEEE</color>
+    <color name="gray_300">#E0E0E0</color>
+    <color name="gray_400">#BDBDBD</color>
+    <color name="gray_500">#9E9E9E</color>
+    <color name="gray_600">#757575</color>
+    <color name="gray_700">#616161</color>
+    <color name="gray_800">#424242</color>
+    <color name="gray_900">#212121</color>
+
+    <!-- Colores primarios -->
+    <color name="red">#F44336</color>
+    <color name="pink">#E91E63</color>
+    <color name="purple">#9C27B0</color>
+    <color name="deep_purple">#673AB7</color>
+    <color name="indigo">#3F51B5</color>
+    <color name="blue">#2196F3</color>
+    <color name="light_blue">#03A9F4</color>
+    <color name="cyan">#00BCD4</color>
+    <color name="teal">#009688</color>
+    <color name="green">#4CAF50</color>
+    <color name="light_green">#8BC34A</color>
+    <color name="lime">#CDDC39</color>
+    <color name="yellow">#FFEB3B</color>
+    <color name="amber">#FFC107</color>
+    <color name="orange">#FF9800</color>
+    <color name="deep_orange">#FF5722</color>
+    <color name="brown">#795548</color>
+
+    <!-- Colores pastel -->
+    <color name="pastel_red">#FF6F61</color>
+    <color name="pastel_orange">#FFB347</color>
+    <color name="pastel_yellow">#FDFD96</color>
+    <color name="pastel_green">#77DD77</color>
+    <color name="pastel_blue">#AEC6CF</color>
+    <color name="pastel_purple">#CBAACB</color>
+    <color name="pastel_pink">#FFB3BA</color>
+
+    <!-- Colores oscuros -->
+    <color name="dark_red">#B71C1C</color>
+    <color name="dark_blue">#0D47A1</color>
+    <color name="dark_green">#1B5E20</color>
+    <color name="dark_purple">#4A148C</color>
+    <color name="dark_orange">#E65100</color>
+
+
+    <!-- Colores metálicos -->
+    <color name="gold">#FFD700</color>
+    <color name="silver">#C0C0C0</color>
+    <color name="bronze">#CD7F32</color>
+    <color name="copper">#B87333</color>
+
+    <!-- Colores acentuados -->
+    <color name="accent_red">#FF5252</color>
+    <color name="accent_blue">#448AFF</color>
+    <color name="accent_green">#69F0AE</color>
+    <color name="accent_purple">#B388FF</color>
+
+    <!-- Colores personalizados -->
+    <color name="custom_aqua">#00FFFF</color>
+    <color name="custom_turquoise">#40E0D0</color>
+    <color name="custom_magenta">#FF00FF</color>
+    <color name="custom_lavender">#E6E6FA</color>
+    <color name="custom_olive">#808000</color>
+    <color name="custom_maroon">#800000</color>
+    <color name="custom_navy">#000080</color>
+    <color name="custom_plum">#DDA0DD</color>
+
+    <!-- Colores para estados (por ejemplo, botones) -->
+    <color name="button_normal">#FF6200EE</color>
+    <color name="button_pressed">#FF3700B3</color>
+    <color name="button_disabled">#FFAAAAAA</color>
+
+    <!-- Colores para fondos y textos -->
+    <color name="background_light">#FFFFFF</color>
+    <color name="background_dark">#121212</color>
+    <color name="text_primary">#212121</color>
+    <color name="text_secondary">#757575</color>
+    <color name="text_hint">#9E9E9E</color>
+</resources>

@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".SeleccionarEquipos">
+
+    <ImageView
+        android:id="@+id/backgroundImage"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:alpha="0.3"
+        android:scaleType="centerCrop"
+        android:src="@drawable/seleccionequipos"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <ImageButton
+        android:id="@+id/lakersButton"
+        android:layout_width="136dp"
+        android:layout_height="95dp"
+        android:background="@android:color/transparent"
+        android:onClick="seleccionarEquipo"
+        android:tag="@drawable/lakers"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/lakers" />
+
+    <ImageButton
+        android:id="@+id/celticsButton"
+        android:layout_width="136dp"
+        android:layout_height="95dp"
+        android:background="@android:color/transparent"
+        android:onClick="seleccionarEquipo"
+        android:tag="@drawable/celtics"
+        app:layout_constraintStart_toEndOf="@+id/lakersButton"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/celtics" />
+
+    <ImageButton
+        android:id="@+id/cavaliersButton"
+        android:layout_width="137dp"
+        android:layout_height="95dp"
+        android:background="@android:color/transparent"
+        android:onClick="seleccionarEquipo"
+        android:tag="@drawable/cavaliers"
+        app:layout_constraintStart_toEndOf="@+id/celticsButton"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/cavaliers" />
+
+    <ImageButton
+        android:id="@+id/warriorsButton"
+        android:layout_width="136dp"
+        android:layout_height="95dp"
+        android:background="@android:color/transparent"
+        android:onClick="seleccionarEquipo"
+        android:tag="@drawable/warriors"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lakersButton"
+        app:srcCompat="@drawable/warriors" />
+
+    <ImageButton
+        android:id="@+id/hawksButton"
+        android:layout_width="136dp"
+        android:layout_height="95dp"
+        android:background="@android:color/transparent"
+        android:onClick="seleccionarEquipo"
+        android:tag="@drawable/hawks"
+        app:layout_constraintStart_toEndOf="@+id/warriorsButton"
+        app:layout_constraintTop_toBottomOf="@+id/celticsButton"
+        app:srcCompat="@drawable/hawks" />
+
+    <ImageButton
+        android:id="@+id/timberwolvesButton"
+        android:layout_width="137dp"
+        android:layout_height="95dp"
+        android:background="@android:color/transparent"
+        android:onClick="seleccionarEquipo"
+        android:tag="@drawable/timberwolves"
+        app:layout_constraintStart_toEndOf="@+id/hawksButton"
+        app:layout_constraintTop_toBottomOf="@+id/cavaliersButton"
+        app:srcCompat="@drawable/timberwolves" />
+
+    <ImageButton
+        android:id="@+id/raptorsButton"
+        android:layout_width="136dp"
+        android:layout_height="95dp"
+        android:background="@android:color/transparent"
+        android:onClick="seleccionarEquipo"
+        android:tag="@drawable/raptors"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/warriorsButton"
+        app:srcCompat="@drawable/raptors" />
+
+    <ImageButton
+        android:id="@+id/sacramentokingsButton"
+        android:layout_width="136dp"
+        android:layout_height="95dp"
+        android:background="@android:color/transparent"
+        android:onClick="seleccionarEquipo"
+        android:tag="@drawable/sacramentokings"
+        app:layout_constraintStart_toEndOf="@+id/raptorsButton"
+        app:layout_constraintTop_toBottomOf="@+id/hawksButton"
+        app:srcCompat="@drawable/sacramentokings" />
+
+    <ImageButton
+        android:id="@+id/chicagobullsButton"
+        android:layout_width="137dp"
+        android:layout_height="95dp"
+        android:background="@android:color/transparent"
+        android:onClick="seleccionarEquipo"
+        android:tag="@drawable/chicagobulls"
+        app:layout_constraintStart_toEndOf="@+id/sacramentokingsButton"
+        app:layout_constraintTop_toBottomOf="@+id/timberwolvesButton"
+        app:srcCompat="@drawable/chicagobulls" />
+
+    <ImageButton
+        android:id="@+id/ers76Button"
+        android:layout_width="136dp"
+        android:layout_height="95dp"
+        android:background="@android:color/transparent"
+        android:onClick="seleccionarEquipo"
+        android:tag="@drawable/ers76"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/raptorsButton"
+        app:srcCompat="@drawable/ers76" />
+
+    <ImageButton
+        android:id="@+id/knicksButton"
+        android:layout_width="136dp"
+        android:layout_height="95dp"
+        android:background="@android:color/transparent"
+        android:onClick="seleccionarEquipo"
+        android:tag="@drawable/knicks"
+        app:layout_constraintStart_toEndOf="@+id/ers76Button"
+        app:layout_constraintTop_toBottomOf="@+id/sacramentokingsButton"
+        app:srcCompat="@drawable/knicks" />
+
+    <ImageButton
+        android:id="@+id/sonicsButton"
+        android:layout_width="137dp"
+        android:layout_height="95dp"
+        android:background="@android:color/transparent"
+        android:onClick="seleccionarEquipo"
+        android:tag="@drawable/sonics"
+        app:layout_constraintStart_toEndOf="@+id/knicksButton"
+        app:layout_constraintTop_toBottomOf="@+id/chicagobullsButton"
+        app:srcCompat="@drawable/sonics" />
+
+    <ImageView
+        android:id="@+id/equipo1"
+        android:layout_width="111dp"
+        android:layout_height="140dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ers76Button"
+        app:srcCompat="@drawable/team1" />
+
+    <ImageView
+        android:id="@+id/equipo2"
+        android:layout_width="111dp"
+        android:layout_height="140dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sonicsButton"
+        app:srcCompat="@drawable/team2" />
+
+    <ImageView
+        android:id="@+id/versus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/equipo2"
+        app:layout_constraintStart_toEndOf="@+id/equipo1"
+        app:layout_constraintTop_toBottomOf="@+id/knicksButton"
+        app:srcCompat="@drawable/vs" />
+
+    <TextView
+        android:id="@+id/textElige_Equipo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/text_background"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:padding="12dp"
+        android:text="@string/textElegirEquipo"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/versus"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/knicksButton" />
+
+    <Button
+        android:id="@+id/cambiarVisitante_Local_Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:backgroundTint="@color/teal"
+        android:onClick="cambiarEquipo"
+        android:text="@string/cambiarEquipo"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/equipo1" />
+
+    <ImageButton
+        android:id="@+id/startMatchButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="50dp"
+        android:background="@android:color/transparent"
+        android:onClick="empezarPartido"
+        android:src="@drawable/startmatch2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/equipo2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

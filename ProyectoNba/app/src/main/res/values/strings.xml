@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ProyectoNba</string>
+    <string name="textElegirEquipo">Elige el equipo numero 1 (LOCAL)</string>
+    <string name="cambiarEquipo">Visitante</string>
+</resources>

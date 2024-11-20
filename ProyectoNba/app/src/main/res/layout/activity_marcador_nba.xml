@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".MarcadorNba">
+
+
+    <ImageView
+        android:id="@+id/VisitanteFaltasImage5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginEnd="35dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        app:srcCompat="@drawable/faltaspersonales" />
+
+    <ImageView
+        android:id="@+id/localFaltasImage1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/faltaspersonales" />
+
+    <ImageView
+        android:id="@+id/imagenlocal"
+        android:layout_width="91dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/knicks" />
+
+    <ImageView
+        android:id="@+id/imagenvisitante"
+        android:layout_width="93dp"
+        android:layout_height="95dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/knicks" />
+
+    <ImageView
+        android:id="@+id/localDecena"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imagenlocal"
+        app:srcCompat="@drawable/cerodigital" />
+
+    <ImageView
+        android:id="@+id/localUnidad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imagenlocal"
+        app:srcCompat="@drawable/cerodigital" />
+
+    <ImageView
+        android:id="@+id/visitanteDecena"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="70dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imagenvisitante"
+        app:srcCompat="@drawable/cerodigital" />
+
+    <ImageView
+        android:id="@+id/visitanteUnidad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imagenvisitante"
+        app:srcCompat="@drawable/cerodigital" />
+
+    <TextView
+        android:id="@+id/textViewLocal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Local"
+        android:textColor="#B0BEC5"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/imagenlocal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewVisitante"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="35dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Visitante"
+        android:textColor="#B0BEC5"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/imagenvisitante"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonSumar1punto"
+        android:layout_width="67dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="155dp"
+        android:backgroundTint="@color/gray_600"
+        android:text="+1"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonSumar2puntos"
+        android:layout_width="67dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="155dp"
+        android:backgroundTint="@color/gray_600"
+        android:text="+2"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/buttonSumar1punto"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonSumar3puntos"
+        android:layout_width="67dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="155dp"
+        android:backgroundTint="@color/gray_600"
+        android:text="+3"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/buttonSumar2puntos"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonRestar1punto"
+        android:layout_width="67dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="155dp"
+        android:backgroundTint="@color/gray_600"
+        android:text="-1"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/buttonSumar3puntos"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/buttoncambiaVisitanteLocal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="164dp"
+        android:backgroundTint="@color/red"
+        android:onClick="cambiarVisitanteLocal"
+        android:text="Visitante"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:cornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewfaltasPersonales"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:text="Faltas Personales"
+        android:textColor="#B0BEC5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/localFaltasImage2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/localFaltasImage1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/faltaspersonales" />
+
+    <ImageView
+        android:id="@+id/localFaltasImage3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/localFaltasImage2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/faltaspersonales" />
+
+    <ImageView
+        android:id="@+id/localFaltasImage4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/localFaltasImage3"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/faltaspersonales" />
+
+    <ImageView
+        android:id="@+id/localFaltasImage5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/localFaltasImage4"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/faltaspersonales" />
+
+    <ImageView
+        android:id="@+id/VisitanteFaltasImage4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/VisitanteFaltasImage5"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/faltaspersonales" />
+
+    <ImageView
+        android:id="@+id/VisitanteFaltasImage3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintEnd_toStartOf="@+id/VisitanteFaltasImage4"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/faltaspersonales" />
+
+    <ImageView
+        android:id="@+id/VisitanteFaltasImage2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/VisitanteFaltasImage3"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/faltaspersonales" />
+
+    <ImageView
+        android:id="@+id/VisitanteFaltasImage1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/VisitanteFaltasImage2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/faltaspersonales"
+
+        />
+
+    <Button
+        android:id="@+id/buttonSumarFaltasPersonales"
+        android:layout_width="110dp"
+        android:layout_height="41dp"
+        android:backgroundTint="@color/gray_600"
+        android:onClick="sumarFaltaPersonal"
+        android:text="+"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:cornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewfaltasPersonales" />
+
+    <ImageView
+        android:id="@+id/decenaMinuto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="150dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/unodigital" />
+
+    <ImageView
+        android:id="@+id/unidadMinuto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="110dp"
+        android:layout_marginBottom="150dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/cerodigital" />
+
+    <ImageView
+        android:id="@+id/decenaSegundo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="130dp"
+        android:layout_marginBottom="150dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/cerodigital" />
+
+    <ImageView
+        android:id="@+id/unidadSegundo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="70dp"
+        android:layout_marginBottom="150dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/cerodigital" />
+
+    <Button
+        android:id="@+id/stopButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginBottom="40dp"
+        android:backgroundTint="@color/indigo"
+        android:onClick="reiniciarTemporizador"
+        android:text="STOP"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="70dp"
+        android:layout_marginBottom="40dp"
+        android:backgroundTint="@color/indigo"
+        android:onClick="iniciarOReanudarTemporizador"
+        android:text="START"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/dosPuntosImagen"
+        android:layout_width="26dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="158dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/dospuntos" />
+
+    <ImageView
+        android:id="@+id/imagenCuartos"
+        android:layout_width="63dp"
+        android:layout_height="60dp"
+        app:layout_constraintBottom_toTopOf="@+id/dosPuntosImagen"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonSumarFaltasPersonales"
+        app:layout_constraintVertical_bias="0.444"
+        app:srcCompat="@drawable/unodigital" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Cuarto"
+        android:textColor="#B0BEC5"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/imagenCuartos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonSumarFaltasPersonales" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
